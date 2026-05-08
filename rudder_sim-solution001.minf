@@ -1,0 +1,593 @@
+Input file: C:\Users\Brian Phu\Documents\GitHub\AME308-HumanPoweredAirplane\rudder_sim-solution001.minp
+
+Solver running in Simcenter Mode
+
+Copyright Siemens 2024
+
+
+[1764]
+Info: The PEP_analytics flag is set to ON.
+
+[1764]
+Info: The DPE_analytics flag is set to ON.
+
+Solver: Simcenter 3D Motion Version 2412 (13.0) Apr  4 2025 12:21:52 Intel Release 64bit
+Interface: RC2412P1500rc1 2024-10-16
+Hostname: BRIANS-PC
+OS Type: Windows
+Release: 6.2
+Version: Build 9200
+Machine: 8664
+Integer size:    5000000
+Real size:    5000000
+Mcheps: 0.22204460492503E-15
+
+[1296]
+Warning (dynamic data element):  When "INTERPOLATED" is selected for the
+print method, the print frequency feature cannot be used.  PRINT.Freq is
+being reset to zero (disabled) and execution is continuing.
+ The GGL formulation is turned on.
+
+[1276]
+Warning:  In the dynamic data element, the step size is larger
+than the print interval specified in the system data element.  The step
+size is being reset so that it equals the print interval.
+  PRint.interval = 0.10000000000000E-01
+  old MAX.int.step = 5.0000000000000E-02
+  new MAX.int.step = 0.10000000000000E-01
+NOTE:  The Time Series Global Output element will reduce PRint.interval
+       when the Output Rate variable is set to two or more.
+
+License Server is [29000@lic-nx.usc.edu]
+
+Features requiring licenses
+-----------------------
+sc_motion_solver "Simcenter Motion Solver"
+
+
+Options processed by solver:
+Name           Value               Description
+----           -----               -----------
+BDFEPS         1.0000000000000E-05 Solution->System Properties->Solution Control->Pivot Tolerance [s]
+BDFMAXORDER    5                   Solution->Dynamic Properties->Solution Control->Maximum Order [s]
+ALLOWRDNUPDATE FALSE               Solution->System Properties->Solution Control->Reevaluate Redundant Constraints [s]
+MAXBDFITER     5                   Solution->Dynamic Properties->Solution Control->Allowed Iteration Steps (Default=5) [s]
+-------------------------------------------------------------
+Legend
+   [s] Found in supplemental options
+
+[1134]
+Warning:  Prior to assembly the number of constraints, drivers and
+initial conditions is not equal to the number of generalized
+coordinates.  The assembly algorithm will be executed but the
+result will represent one of several possible solutions.
+Number of constraints, drivers, I.C's =                   60
+Number of generalized coordinates     =                   56
+
+Results achieved by the model assembly process with drivers:
+
+  Number of function evaluations =     1
+  Maximum constraint violation   =   0.278533E-11
+
+ Element: Joystick
+    Coordinate    New Value     Original Value  Difference
+    X              251.35         251.35         0.0000    
+    Y             -52.857        -52.857         0.0000    
+    Z             0.17800E-02    0.17800E-02     0.0000    
+    E0            0.70702        0.70702         0.0000    
+    E1           -0.10001E-01   -0.10001E-01     0.0000    
+    E2           -0.70701       -0.70701         0.0000    
+    E3           -0.12935E-01   -0.12935E-01     0.0000    
+
+ Element: Pitch_Stick
+    Coordinate    New Value     Original Value  Difference
+    X              269.67         269.67         0.0000    
+    Y             -64.409        -64.409         0.0000    
+    Z            -0.94076E-01   -0.94076E-01     0.0000    
+    E0            0.70171        0.70171         0.0000    
+    E1            0.71245        0.71245         0.0000    
+    E2            0.40038E-02    0.40038E-02     0.0000    
+    E3           -0.18077E-02   -0.18077E-02     0.0000    
+
+ Element: Rudder
+    Coordinate    New Value     Original Value  Difference
+    X              210.92         210.92         0.0000    
+    Y             -250.39        -250.39         0.0000    
+    Z             0.30491E-01    0.30491E-01     0.0000    
+    E0            0.70570        0.70570         0.0000    
+    E1           -0.58300E-01   -0.58300E-01     0.0000    
+    E2           -0.70589       -0.70589         0.0000    
+    E3           -0.17705E-01   -0.17705E-01     0.0000    
+
+ Element: Rudder_Stick
+    Coordinate    New Value     Original Value  Difference
+    X              266.64         266.64         0.0000    
+    Y             -71.203        -71.203         0.0000    
+    Z            -0.69355E-01   -0.69355E-01     0.0000    
+    E0            0.70471        0.70471         0.0000    
+    E1            0.70950        0.70950         0.0000    
+    E2             0.0000         0.0000         0.0000    
+    E3             0.0000         0.0000         0.0000    
+
+ Element: Vertical_Stabalizer
+    Coordinate    New Value     Original Value  Difference
+    X              211.74         211.74         0.0000    
+    Y             -234.30        -234.30         0.0000    
+    Z            -0.18619E-02   -0.18619E-02     0.0000    
+    E0            0.70665        0.70665         0.0000    
+    E1            0.19054E-01    0.19054E-01     0.0000    
+    E2           -0.70706       -0.70706         0.0000    
+    E3            0.18880E-01    0.18880E-01     0.0000    
+
+ Element: Yaw_Left
+    Coordinate    New Value     Original Value  Difference
+    X              244.46         244.46         0.0000    
+    Y             -164.41        -164.41         0.0000    
+    Z             -4.2480        -4.2480         0.0000    
+    E0            0.41580        0.41580         0.0000    
+    E1           -0.57532       -0.57532         0.0000    
+    E2           -0.41106       -0.41106         0.0000    
+    E3           -0.57197       -0.57197         0.0000    
+
+ Element: Yaw_Right
+    Coordinate    New Value     Original Value  Difference
+    X              244.24         244.24         0.0000    
+    Y             -174.60        -174.60         0.0000    
+    Z              4.2446         4.2446         0.0000    
+    E0            0.41733        0.41733         0.0000    
+    E1           -0.56052       -0.56052         0.0000    
+    E2           -0.43116       -0.43116         0.0000    
+    E3           -0.57075       -0.57075         0.0000    
+
+ Element: the_ground
+    Coordinate    New Value     Original Value  Difference
+    X              0.0000         0.0000         0.0000    
+    Y              0.0000         0.0000         0.0000    
+    Z              0.0000         0.0000         0.0000    
+    E0             1.0000         1.0000         0.0000    
+    E1             0.0000         0.0000         0.0000    
+    E2             0.0000         0.0000         0.0000    
+    E3             0.0000         0.0000         0.0000    
+ 
+************************************************************************************************************************
+                        Mass Properties                                   
+************************************************************************************************************************
+ 
+ Mass units = SLINCH              
+ Mass Conversion Factor =    1.00000000000000     
+ Length units = INCH                
+ 
+                         Mass            IXX            IYY            IZZ            IXY            IXZ            IYZ
+Joystick               0.27037E-01     1.7497         1.7431        0.14192E-01     0.0000         0.0000         0.0000    
+Pitch_Stick             1.0000         1.0000         1.0000         1.0000         0.0000         0.0000         0.0000    
+Rudder                 0.31009E-01     11.338         8.9141         2.5490         0.0000         0.0000         0.0000    
+Rudder_Stick           0.24327E-01     3.1717         3.1195        0.59128E-01     0.0000         0.0000         0.0000    
+Vertical_Stabalizer     1.0000         1.0000         1.0000         1.0000         0.0000         0.0000         0.0000    
+Yaw_Left               0.11152E-01     26.837         26.823        0.15046E-01     0.0000         0.0000         0.0000    
+Yaw_Right              0.12529E-01     38.099         38.086        0.13697E-01     0.0000         0.0000         0.0000    
+the_ground              1.0000         1.0000         1.0000         1.0000         0.0000         0.0000         0.0000    
+ 
+
+[1172]
+The following are redundant constraints and will be deleted from the system:
+.........Element Info.........  ..........Meaning..............
+
+ Name: J003
+    Type:  Revolute joint                 ( 5) relative rotation about Y axis of "Rudder_Stick/J003_j"
+
+ Name: J006
+    Type:  Revolute joint                 ( 4) relative rotation about X axis of "Yaw_Right/J006_j"
+
+ Name: J002
+    Type:  Revolute joint                 ( 4) relative rotation about X axis of "Rudder_Stick/J002_j"
+
+ Name: J002
+    Type:  Revolute joint                 ( 2) relative translation along Y axis of "Global coordinate system"
+
+
+The remaining constraints in which the redundant
+constraints are linearly dependent to are summarized as:
+
+Name: J003
+     constraint ( 5) relative rotation about Y axis of "Rudder_Stick/J003_j"
+     is linearly dependent to:
+
+     Name: J005
+        Constraint: ( 5) relative rotation about Y axis of "Yaw_Left/J005_j"  Factor:  -0.5935    
+     Name: J002
+        Constraint: ( 5) relative rotation about Y axis of "Rudder_Stick/J002_j"  Factor:    1.000    
+     Name: J006
+        Constraint: ( 5) relative rotation about Y axis of "Yaw_Right/J006_j"  Factor:   0.5935    
+
+Name: J006
+     constraint ( 4) relative rotation about X axis of "Yaw_Right/J006_j"
+     is linearly dependent to:
+
+     Name: Rudder
+        Constraint: ( 8) Euler parameter normalization of "Rudder/Rudder_cm"  Factor:  -0.4581E-01
+     Name: Rudder_Stick
+        Constraint: ( 8) Euler parameter normalization of "Rudder_Stick/Rudder_Stick_cm"  Factor:   0.6902E-01
+     Name: J005
+        Constraint: ( 5) relative rotation about Y axis of "Yaw_Left/J005_j"  Factor:   0.2623    
+     Name: J005
+        Constraint: ( 3) relative translation along Z axis of "Global coordinate system"  Factor:  -0.1654    
+     Name: J006
+        Constraint: ( 3) relative translation along Z axis of "Global coordinate system"  Factor:   0.1654    
+     Name: J002
+        Constraint: ( 3) relative translation along Z axis of "Global coordinate system"  Factor:   0.1654    
+     Name: J003
+        Constraint: ( 3) relative translation along Z axis of "Global coordinate system"  Factor:  -0.1654    
+     Name: J006
+        Constraint: ( 5) relative rotation about Y axis of "Yaw_Right/J006_j"  Factor:  -0.2623    
+     Name: J005
+        Constraint: ( 4) relative rotation about X axis of "Yaw_Left/J005_j"  Factor:  -0.8833    
+
+Name: J002
+     constraint ( 4) relative rotation about X axis of "Rudder_Stick/J002_j"
+     is linearly dependent to:
+
+     Name: Pitch_Stick
+        Constraint: ( 7) absolute rotation of "Pitch_Stick/Pitch_Stick_cm"  Factor:  -0.1118E-01
+     Name: Pitch_Stick
+        Constraint: ( 7) absolute rotation of "Pitch_Stick/Pitch_Stick_cm"  Factor:   0.1118E-01
+     Name: Pitch_Stick
+        Constraint: ( 7) absolute rotation of "Pitch_Stick/Pitch_Stick_cm"  Factor:   0.1118E-01
+     Name: Rudder
+        Constraint: ( 8) Euler parameter normalization of "Rudder/Rudder_cm"  Factor:   0.1311E-01
+     Name: Vertical_Stabalizer
+        Constraint: ( 7) absolute rotation of "Vertical_Stabalizer/Vertical_Stabalizer_cm"  Factor:   0.1118E-01
+     Name: Vertical_Stabalizer
+        Constraint: ( 7) absolute rotation of "Vertical_Stabalizer/Vertical_Stabalizer_cm"  Factor:  -0.6574E-01
+     Name: Vertical_Stabalizer
+        Constraint: ( 7) absolute rotation of "Vertical_Stabalizer/Vertical_Stabalizer_cm"  Factor:  -0.6575E-01
+     Name: Yaw_Left
+        Constraint: ( 8) Euler parameter normalization of "Yaw_Left/Yaw_Left_cm"  Factor:   0.6347E-01
+     Name: Yaw_Right
+        Constraint: ( 8) Euler parameter normalization of "Yaw_Right/Yaw_Right_cm"  Factor:  -0.5115E-01
+     Name: J002
+        Constraint: ( 1) relative translation along X axis of "Global coordinate system"  Factor:   0.1004    
+     Name: J006
+        Constraint: ( 1) relative translation along X axis of "Global coordinate system"  Factor:   0.1004    
+     Name: J005
+        Constraint: ( 1) relative translation along X axis of "Global coordinate system"  Factor:  -0.1116    
+     Name: J003
+        Constraint: ( 1) relative translation along X axis of "Global coordinate system"  Factor:  -0.1116    
+     Name: J003
+        Constraint: ( 4) relative rotation about X axis of "Rudder_Stick/J003_j"  Factor:   0.9816    
+     Name: J002
+        Constraint: ( 5) relative rotation about Y axis of "Rudder_Stick/J002_j"  Factor:  -0.4438E-01
+     Name: J007
+        Constraint: ( 2) relative translation along Y axis of "Rudder_Stick/J007_j"  Factor:  -0.1118E-01
+     Name: J006
+        Constraint: ( 5) relative rotation about Y axis of "Yaw_Right/J006_j"  Factor:  -0.2945E-01
+     Name: J004
+        Constraint: ( 4) relative rotation about X axis of "Vertical_Stabalizer/J004_j"  Factor:   0.6956E-01
+     Name: J004
+        Constraint: ( 1) relative translation along X axis of "Global coordinate system"  Factor:   0.1118E-01
+     Name: J001
+        Constraint: ( 1) relative translation along X axis of "Global coordinate system"  Factor:  -0.1118E-01
+
+Name: J002
+     constraint ( 2) relative translation along Y axis of "Global coordinate system"
+     is linearly dependent to:
+
+     Name: Rudder
+        Constraint: ( 8) Euler parameter normalization of "Rudder/Rudder_cm"  Factor:  -0.7374    
+     Name: Vertical_Stabalizer
+        Constraint: ( 7) absolute rotation of "Vertical_Stabalizer/Vertical_Stabalizer_cm"  Factor:   0.1615    
+     Name: Vertical_Stabalizer
+        Constraint: ( 7) absolute rotation of "Vertical_Stabalizer/Vertical_Stabalizer_cm"  Factor:   0.1875    
+     Name: the_ground
+        Constraint: ( 7) absolute rotation of "the_ground_cm"  Factor:    9.054    
+     Name: Yaw_Left
+        Constraint: ( 8) Euler parameter normalization of "Yaw_Left/Yaw_Left_cm"  Factor:   -2.054    
+     Name: Yaw_Right
+        Constraint: ( 8) Euler parameter normalization of "Yaw_Right/Yaw_Right_cm"  Factor:    2.048    
+     Name: Drv001
+        Constraint: (22) relative yaw angle between "Joystick/Drv001_i" and "the_ground/Drv001_j"  Factor:    9.054    
+     Name: J002
+        Constraint: ( 1) relative translation along X axis of "Global coordinate system"  Factor:  -0.2665    
+     Name: J006
+        Constraint: ( 1) relative translation along X axis of "Global coordinate system"  Factor:  -0.2665    
+     Name: J005
+        Constraint: ( 1) relative translation along X axis of "Global coordinate system"  Factor:   0.2961    
+     Name: J003
+        Constraint: ( 1) relative translation along X axis of "Global coordinate system"  Factor:   0.2961    
+     Name: J005
+        Constraint: ( 4) relative rotation about X axis of "Yaw_Left/J005_j"  Factor:  -0.2833    
+     Name: J004
+        Constraint: ( 4) relative rotation about X axis of "Vertical_Stabalizer/J004_j"  Factor:  -0.1846    
+     Name: J003
+        Constraint: ( 2) relative translation along Y axis of "Global coordinate system"  Factor:    1.000    
+     Name: J005
+        Constraint: ( 2) relative translation along Y axis of "Global coordinate system"  Factor:    1.000    
+     Name: J006
+        Constraint: ( 2) relative translation along Y axis of "Global coordinate system"  Factor:   -1.000    
+     Name: J007
+        Constraint: ( 5) relative rotation about Y axis of "Rudder_Stick/J007_j"  Factor:   0.5132    
+     Name: J004
+        Constraint: ( 5) relative rotation about Y axis of "Vertical_Stabalizer/J004_j"  Factor:  -0.1382    
+
+[2601]
+Warning:  The GGL option is enabled in Dynamic Properties, but the model 
+has zero degrees of freedom,
+which does not support GGL.  Therefore, the GGL option is disabled.  The simulation
+will proceed.
+ Using QR Initial Velocity Method
+
+[1286]
+Warning:  Initial conditions may not be sufficient (DAP2).
+Solution of initial velocities, using QR method:
+
+ Element: Joystick
+    Coordinate    Velocity
+    X              0.00000    
+    Y             0.554671E-04
+    Z            -0.179489E-01
+    E0           -0.342714E-03
+    E1           -0.242292E-01
+    E2           -0.443289E-03
+    E3            0.242287E-01
+
+ Element: Pitch_Stick
+    Coordinate    Velocity
+    X              0.00000    
+    Y              0.00000    
+    Z              0.00000    
+    E0             0.00000    
+    E1             0.00000    
+    E2             0.00000    
+    E3             0.00000    
+
+ Element: Rudder
+    Coordinate    Velocity
+    X              0.00000    
+    Y            -0.399900E-03
+    Z            -0.121461    
+    E0            0.382308E-03
+    E1            0.462765E-02
+    E2            0.116102E-03
+    E3           -0.462892E-02
+
+ Element: Rudder_Stick
+    Coordinate    Velocity
+    X             0.254362E-13
+    Y             0.325866    
+    Z              1.23944    
+    E0            0.243141E-01
+    E1           -0.241500E-01
+    E2             0.00000    
+    E3             0.00000    
+
+ Element: Vertical_Stabalizer
+    Coordinate    Velocity
+    X              0.00000    
+    Y              0.00000    
+    Z              0.00000    
+    E0             0.00000    
+    E1             0.00000    
+    E2             0.00000    
+    E3             0.00000    
+
+ Element: Yaw_Left
+    Coordinate    Velocity
+    X             0.198868E-13
+    Y             0.557124E-01
+    Z              1.00615    
+    E0            0.377272E-02
+    E1            0.272663E-02
+    E2            0.375072E-02
+    E3           -0.269553E-02
+
+ Element: Yaw_Right
+    Coordinate    Velocity
+    X             0.156831E-13
+    Y            -0.556684E-01
+    Z             0.872446    
+    E0            0.367568E-02
+    E1            0.273666E-02
+    E2            0.374272E-02
+    E3           -0.282734E-02
+
+ Element: the_ground
+    Coordinate    Velocity
+    X              0.00000    
+    Y              0.00000    
+    Z              0.00000    
+    E0             0.00000    
+    E1             0.00000    
+    E2             0.00000    
+    E3             0.00000    
+
+Solution of velocities in local coordinates:
+
+ Element: Joystick
+    Coordinate    Velocity
+    X              0.00000    
+    Y             0.554671E-04
+    Z            -0.179489E-01
+    OMEGA_XL      0.334647E-05
+    OMEGA_YL     -0.222286E-02
+    OMEGA_ZL      0.685029E-01
+
+ Element: Pitch_Stick
+    Coordinate    Velocity
+    X              0.00000    
+    Y              0.00000    
+    Z              0.00000    
+    OMEGA_XL       0.00000    
+    OMEGA_YL       0.00000    
+    OMEGA_ZL       0.00000    
+
+ Element: Rudder
+    Coordinate    Velocity
+    X              0.00000    
+    Y            -0.399900E-03
+    Z            -0.121461    
+    OMEGA_XL      0.368998E-04
+    OMEGA_YL      0.140720E-02
+    OMEGA_ZL     -0.130394E-01
+
+ Element: Rudder_Stick
+    Coordinate    Velocity
+    X             0.254362E-13
+    Y             0.325866    
+    Z              1.23944    
+    OMEGA_XL     -0.685389E-01
+    OMEGA_YL       0.00000    
+    OMEGA_ZL       0.00000    
+
+ Element: Vertical_Stabalizer
+    Coordinate    Velocity
+    X              0.00000    
+    Y              0.00000    
+    Z              0.00000    
+    OMEGA_XL       0.00000    
+    OMEGA_YL       0.00000    
+    OMEGA_ZL       0.00000    
+
+ Element: Yaw_Left
+    Coordinate    Velocity
+    X             0.198868E-13
+    Y             0.557124E-01
+    Z              1.00615    
+    OMEGA_XL      0.101926E-03
+    OMEGA_YL      0.124414E-01
+    OMEGA_ZL      0.414830E-02
+
+ Element: Yaw_Right
+    Coordinate    Velocity
+    X             0.156831E-13
+    Y            -0.556684E-01
+    Z             0.872446    
+    OMEGA_XL     -0.305559E-03
+    OMEGA_YL      0.125869E-01
+    OMEGA_ZL      0.367182E-02
+
+ Element: the_ground
+    Coordinate    Velocity
+    X              0.00000    
+    Y              0.00000    
+    Z              0.00000    
+    OMEGA_XL       0.00000    
+    OMEGA_YL       0.00000    
+    OMEGA_ZL       0.00000    
+
+Number of real data in the system     =     84391
+Number of integer data in the system  =     56281
+
+
+[1310]
+Warning:  Number of constraints is greater than or equal to the number
+of generalized coordinates.
+  Number of generalized coordinates =                   56
+  Number of constraints             =                   56
+
+Solution of accelerations in local coordinates:
+
+ Element: Joystick
+    Coordinate    Acceleration
+    X            -0.130114E-16
+    Y            -0.123020E-02
+    Z            -0.380166E-05
+    OMEGAD_XL     0.147045E-15
+    OMEGAD_YL     0.270368E-15
+    OMEGAD_ZL     0.734547E-17
+
+ Element: Pitch_Stick
+    Coordinate    Acceleration
+    X              0.00000    
+    Y              0.00000    
+    Z              0.00000    
+    OMEGAD_XL      0.00000    
+    OMEGAD_YL      0.00000    
+    OMEGAD_ZL      0.00000    
+
+ Element: Rudder
+    Coordinate    Acceleration
+    X            -0.125166E-15
+    Y             0.159820E-02
+    Z             0.157934E-02
+    OMEGAD_XL    -0.481395E-06
+    OMEGAD_YL    -0.183583E-04
+    OMEGAD_ZL     0.170112E-03
+
+ Element: Rudder_Stick
+    Coordinate    Acceleration
+    X             0.184715E-14
+    Y            -0.847400E-01
+    Z            -0.449994E-01
+    OMEGAD_XL     0.238524E-17
+    OMEGAD_YL     0.101579E-15
+    OMEGAD_ZL    -0.178966E-15
+
+ Element: Vertical_Stabalizer
+    Coordinate    Acceleration
+    X              0.00000    
+    Y              0.00000    
+    Z              0.00000    
+    OMEGAD_XL      0.00000    
+    OMEGAD_YL      0.00000    
+    OMEGAD_ZL      0.00000    
+
+ Element: Yaw_Left
+    Coordinate    Acceleration
+    X             0.118252E-14
+    Y            -0.139227E-01
+    Z            -0.123956E-01
+    OMEGAD_XL    -0.132973E-05
+    OMEGAD_YL    -0.162310E-03
+    OMEGAD_ZL    -0.541188E-04
+
+ Element: Yaw_Right
+    Coordinate    Acceleration
+    X             0.168006E-14
+    Y            -0.107641E-01
+    Z            -0.293146E-01
+    OMEGAD_XL     0.837405E-05
+    OMEGAD_YL    -0.344954E-03
+    OMEGAD_ZL    -0.100629E-03
+
+ Element: the_ground
+    Coordinate    Acceleration
+    X              0.00000    
+    Y              0.00000    
+    Z              0.00000    
+    OMEGAD_XL      0.00000    
+    OMEGAD_YL      0.00000    
+    OMEGAD_ZL      0.00000    
+
+Total Number of Bodies             =    8
+
+Total Number of Degrees of Freedom =   48
+Number of Kinematic Constraints    =   48
+Number of Drivers                  =    1
+Number of Initial Conditions       =    0
+Number of Degrees of Freedom       =    0
+
+[1772]
+Warning: A dynamic simulation with no open degrees of freedom is being executed with a
+dynamic element this may lead to a simulation failure. The user should consider switching
+to a kinematics or inverse dynamics simulation.
+
+The number of symbolic factorizations of the Acceleration matrix =                    1
+
+The number of symbolic factorizations of BDF Jacobian matrix =                    1
+
+[1441]
+Final integrator statistics:
+  Number of steps                 =                  109
+  Number of f-s                   =                  112
+  Number of j-s                   =                    2
+  Ratio of f-s/steps              =  1.0275229357798
+  Ratio of j-s/steps              = 0.18348623853211E-01
+  Current time                    =  1.0000000000000
+  Total velocity computations     =                    0
+  Total position computations     =                    0
+Average Integration Order =   2.467889908257    
+Average Step Size         =  0.9176422018349E-02
+
+Userdef was internal
+
+    Total elapsed CPU time:  0.3090000    
+    Total clock time:          1
