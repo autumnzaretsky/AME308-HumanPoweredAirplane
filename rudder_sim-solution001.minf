@@ -1,4 +1,4 @@
-Input file: C:\Users\Brian Phu\Documents\GitHub\AME308-HumanPoweredAirplane\rudder_sim-solution001.minp
+Input file: \\vlabfs.vlab.usc.edu\home$\brianphu\Downloads\AME308-HumanPoweredAirplane\rudder_sim-solution001.minp
 
 Solver running in Simcenter Mode
 
@@ -13,7 +13,7 @@ Info: The DPE_analytics flag is set to ON.
 
 Solver: Simcenter 3D Motion Version 2412 (13.0) Apr  4 2025 12:21:52 Intel Release 64bit
 Interface: RC2412P1500rc1 2024-10-16
-Hostname: BRIANS-PC
+Hostname: EDESK-026
 OS Type: Windows
 Release: 6.2
 Version: Build 9200
@@ -473,8 +473,8 @@ Solution of velocities in local coordinates:
     OMEGA_YL       0.00000    
     OMEGA_ZL       0.00000    
 
-Number of real data in the system     =     84391
-Number of integer data in the system  =     56281
+Number of real data in the system     =     84853
+Number of integer data in the system  =     56456
 
 
 [1310]
@@ -576,18 +576,18 @@ The number of symbolic factorizations of BDF Jacobian matrix =                  
 
 [1441]
 Final integrator statistics:
-  Number of steps                 =                  109
-  Number of f-s                   =                  112
+  Number of steps                 =                  509
+  Number of f-s                   =                  512
   Number of j-s                   =                    2
-  Ratio of f-s/steps              =  1.0275229357798
-  Ratio of j-s/steps              = 0.18348623853211E-01
-  Current time                    =  1.0000000000000
+  Ratio of f-s/steps              =  1.0058939096267
+  Ratio of j-s/steps              = 0.39292730844794E-02
+  Current time                    =  4.9999999999999
   Total velocity computations     =                    0
   Total position computations     =                    0
-Average Integration Order =   2.467889908257    
-Average Step Size         =  0.9176422018349E-02
+Average Integration Order =   2.487229862475    
+Average Step Size         =  0.9823634577603E-02
 
 Userdef was internal
 
-    Total elapsed CPU time:  0.3090000    
-    Total clock time:          1
+    Total elapsed CPU time:   4.119000    
+    Total clock time:          4

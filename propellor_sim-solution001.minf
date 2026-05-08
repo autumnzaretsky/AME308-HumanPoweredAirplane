@@ -1,0 +1,417 @@
+Input file: \\vlabfs.vlab.usc.edu\home$\brianphu\Downloads\AME308-HumanPoweredAirplane\propellor_sim-solution001.minp
+
+Solver running in Simcenter Mode
+
+Copyright Siemens 2024
+
+
+[1764]
+Info: The PEP_analytics flag is set to ON.
+
+[1764]
+Info: The DPE_analytics flag is set to ON.
+
+Solver: Simcenter 3D Motion Version 2412 (13.0) Apr  4 2025 12:21:52 Intel Release 64bit
+Interface: RC2412P1500rc1 2024-10-16
+Hostname: EDESK-026
+OS Type: Windows
+Release: 6.2
+Version: Build 9200
+Machine: 8664
+Integer size:    5000000
+Real size:    5000000
+Mcheps: 0.22204460492503E-15
+
+[1296]
+Warning (dynamic data element):  When "INTERPOLATED" is selected for the
+print method, the print frequency feature cannot be used.  PRINT.Freq is
+being reset to zero (disabled) and execution is continuing.
+ The GGL formulation is turned on.
+
+[1276]
+Warning:  In the dynamic data element, the step size is larger
+than the print interval specified in the system data element.  The step
+size is being reset so that it equals the print interval.
+  PRint.interval = 0.10000000000000E-01
+  old MAX.int.step = 5.0000000000000E-02
+  new MAX.int.step = 0.10000000000000E-01
+NOTE:  The Time Series Global Output element will reduce PRint.interval
+       when the Output Rate variable is set to two or more.
+
+License Server is [29000@lic-nx.usc.edu]
+
+Features requiring licenses
+-----------------------
+sc_motion_solver "Simcenter Motion Solver"
+
+
+Options processed by solver:
+Name           Value               Description
+----           -----               -----------
+BDFEPS         1.0000000000000E-05 Solution->System Properties->Solution Control->Pivot Tolerance [s]
+BDFMAXORDER    5                   Solution->Dynamic Properties->Solution Control->Maximum Order [s]
+ALLOWRDNUPDATE FALSE               Solution->System Properties->Solution Control->Reevaluate Redundant Constraints [s]
+MAXBDFITER     5                   Solution->Dynamic Properties->Solution Control->Allowed Iteration Steps (Default=5) [s]
+-------------------------------------------------------------
+Legend
+   [s] Found in supplemental options
+
+[1134]
+Warning:  Prior to assembly the number of constraints, drivers and
+initial conditions is not equal to the number of generalized
+coordinates.  The assembly algorithm will be executed but the
+result will represent one of several possible solutions.
+Number of constraints, drivers, I.C's =                   42
+Number of generalized coordinates     =                   44
+
+Results achieved by the model assembly process with drivers:
+
+  Number of function evaluations =     1
+  Maximum constraint violation   =   0.133478E-11
+
+ Element: Airframe
+    Coordinate    New Value     Original Value  Difference
+    X              245.78         245.78         0.0000    
+    Y             -79.602        -79.602         0.0000    
+    Z             0.84723E-02    0.84723E-02     0.0000    
+    E0            0.42068        0.42068         0.0000    
+    E1           -0.56842       -0.56842         0.0000    
+    E2           -0.42057       -0.42057         0.0000    
+    E3           -0.56837       -0.56837         0.0000    
+
+ Element: Center_Step
+    Coordinate    New Value     Original Value  Difference
+    X              260.87         260.87         0.0000    
+    Y             -39.472        -39.472         0.0000    
+    Z              1.1243         1.1243         0.0000    
+    E0           -0.82417E-01   -0.82417E-01     0.0000    
+    E1            0.85062        0.85062         0.0000    
+    E2            0.51685        0.51685         0.0000    
+    E3           -0.50151E-01   -0.50151E-01     0.0000    
+
+ Element: Left_Pedal
+    Coordinate    New Value     Original Value  Difference
+    X              256.44         256.44         0.0000    
+    Y             -37.167        -37.167         0.0000    
+    Z             -6.3588        -6.3588         0.0000    
+    E0            0.11602E-06    0.11602E-06     0.0000    
+    E1            0.90631        0.90631         0.0000    
+    E2            0.42262        0.42262         0.0000    
+    E3            0.71178E-07    0.71178E-07     0.0000    
+
+ Element: Propeller
+    Coordinate    New Value     Original Value  Difference
+    X              216.88         216.88         0.0000    
+    Y             -17.897        -17.897         0.0000    
+    Z             0.27092E-03    0.27092E-03     0.0000    
+    E0            0.96038        0.96038         0.0000    
+    E1           -0.16714E-04   -0.16714E-04     0.0000    
+    E2           -0.27870       -0.27870         0.0000    
+    E3            0.62982E-04    0.62982E-04     0.0000    
+
+ Element: Right_Pedal
+    Coordinate    New Value     Original Value  Difference
+    X              265.31         265.31         0.0000    
+    Y             -41.781        -41.781         0.0000    
+    Z              6.3588         6.3588         0.0000    
+    E0            0.93969        0.93969         0.0000    
+    E1            0.13237E-06    0.13237E-06     0.0000    
+    E2            0.31705E-07    0.31705E-07     0.0000    
+    E3            0.34202        0.34202         0.0000    
+
+ Element: the_ground
+    Coordinate    New Value     Original Value  Difference
+    X              0.0000         0.0000         0.0000    
+    Y              0.0000         0.0000         0.0000    
+    Z              0.0000         0.0000         0.0000    
+    E0             1.0000         1.0000         0.0000    
+    E1             0.0000         0.0000         0.0000    
+    E2             0.0000         0.0000         0.0000    
+    E3             0.0000         0.0000         0.0000    
+
+ Element: J005
+    Coordinate    New Value     Original Value  Difference
+    Rel.ang.1    -0.87442E-14   -0.87442E-14     0.0000    
+
+ Element: J005
+    Coordinate    New Value     Original Value  Difference
+    Rel.ang.2     0.31294E-14    0.31294E-14     0.0000    
+ 
+****************************************************************************************************************
+                        Mass Properties                                   
+****************************************************************************************************************
+ 
+ Mass units = SLINCH              
+ Mass Conversion Factor =    1.00000000000000     
+ Length units = INCH                
+ 
+                 Mass            IXX            IYY            IZZ            IXY            IXZ            IYZ
+Airframe        1.0000         1.0000         1.0000         1.0000         0.0000         0.0000         0.0000    
+Center_Step    0.81415E-02    0.58210E-01    0.53233E-01    0.20144E-01     0.0000         0.0000         0.0000    
+Left_Pedal     0.24666E-03    0.80233E-03    0.60330E-03    0.20166E-03     0.0000         0.0000         0.0000    
+Propeller      0.10904         104.29         101.70         3.8058         0.0000         0.0000         0.0000    
+Right_Pedal    0.24666E-03    0.80233E-03    0.60330E-03    0.20166E-03     0.0000         0.0000         0.0000    
+the_ground      1.0000         1.0000         1.0000         1.0000         0.0000         0.0000         0.0000    
+ 
+
+Ignoring Initial conditions, the following were chosen
+as independent coordinates:
+
+
+ Element: Left_Pedal
+    Coordinate:  E1        
+
+ Element: Right_Pedal
+    Coordinate:  E3        
+ Using QR Initial Velocity Method
+
+[1286]
+Warning:  Initial conditions may not be sufficient (DAP2).
+Solution of initial velocities, using QR method:
+
+ Element: Airframe
+    Coordinate    Velocity
+    X              0.00000    
+    Y              0.00000    
+    Z              0.00000    
+    E0             0.00000    
+    E1             0.00000    
+    E2             0.00000    
+    E3             0.00000    
+
+ Element: Center_Step
+    Coordinate    Velocity
+    X            -0.154590E-01
+    Y            -0.205742E-01
+    Z             0.529033E-12
+    E0            0.157554    
+    E1            -1.62375    
+    E2             2.67230    
+    E3           -0.258921    
+
+ Element: Left_Pedal
+    Coordinate    Velocity
+    X             -14.4952    
+    Y             -27.8720    
+    Z             0.702648E-12
+    E0            0.415614E-13
+    E1             0.00000    
+    E2             0.00000    
+    E3           -0.893338E-13
+
+ Element: Propeller
+    Coordinate    Velocity
+    X             0.170226E-02
+    Y             0.409573E-12
+    Z            -0.504791E-03
+    E0            0.875554    
+    E1            0.197864E-03
+    E2             3.01712    
+    E3            0.525085E-04
+
+ Element: Right_Pedal
+    Coordinate    Velocity
+    X              14.4952    
+    Y              27.8720    
+    Z             0.305387E-12
+    E0             0.00000    
+    E1           -0.471981E-13
+    E2            0.850783E-13
+    E3             0.00000    
+
+ Element: the_ground
+    Coordinate    Velocity
+    X              0.00000    
+    Y              0.00000    
+    Z              0.00000    
+    E0             0.00000    
+    E1             0.00000    
+    E2             0.00000    
+    E3             0.00000    
+
+ Element: J005
+    Coordinate    Velocity
+    Rel.ang.1      6.28319    
+
+ Element: J005
+    Coordinate    Velocity
+    Rel.ang.2      6.28319    
+
+Solution of velocities in local coordinates:
+
+ Element: Airframe
+    Coordinate    Velocity
+    X              0.00000    
+    Y              0.00000    
+    Z              0.00000    
+    OMEGA_XL       0.00000    
+    OMEGA_YL       0.00000    
+    OMEGA_ZL       0.00000    
+
+ Element: Center_Step
+    Coordinate    Velocity
+    X            -0.154590E-01
+    Y            -0.205742E-01
+    Z             0.529033E-12
+    OMEGA_XL     -0.774995E-03
+    OMEGA_YL      -1.20670    
+    OMEGA_ZL      -6.16622    
+
+ Element: Left_Pedal
+    Coordinate    Velocity
+    X             -14.4952    
+    Y             -27.8720    
+    Z             0.702648E-12
+    OMEGA_XL      0.173247E-15
+    OMEGA_YL     -0.197057E-12
+    OMEGA_ZL     -0.266449E-19
+
+ Element: Propeller
+    Coordinate    Velocity
+    X             0.170226E-02
+    Y             0.409573E-12
+    Z            -0.504791E-03
+    OMEGA_XL      0.818635E-03
+    OMEGA_YL       6.28319    
+    OMEGA_ZL     -0.188647E-04
+
+ Element: Right_Pedal
+    Coordinate    Velocity
+    X              14.4952    
+    Y              27.8720    
+    Z             0.305387E-12
+    OMEGA_XL     -0.305063E-13
+    OMEGA_YL      0.192180E-12
+    OMEGA_ZL     -0.255159E-19
+
+ Element: the_ground
+    Coordinate    Velocity
+    X              0.00000    
+    Y              0.00000    
+    Z              0.00000    
+    OMEGA_XL       0.00000    
+    OMEGA_YL       0.00000    
+    OMEGA_ZL       0.00000    
+
+Number of real data in the system     =     94277
+Number of integer data in the system  =     56626
+
+
+Solution of accelerations in local coordinates:
+
+ Element: Airframe
+    Coordinate    Acceleration
+    X              0.00000    
+    Y              0.00000    
+    Z              0.00000    
+    OMEGAD_XL      0.00000    
+    OMEGAD_YL      0.00000    
+    OMEGAD_ZL      0.00000    
+
+ Element: Center_Step
+    Coordinate    Acceleration
+    X             0.129272    
+    Y            -0.971316E-01
+    Z             0.198776E-13
+    OMEGAD_XL    -0.712763E-13
+    OMEGAD_YL    -0.466294E-14
+    OMEGAD_ZL    -0.392741E-14
+
+ Element: Left_Pedal
+    Coordinate    Acceleration
+    X              175.125    
+    Y             -91.0762    
+    Z             0.565943E-11
+    OMEGAD_XL    -0.124871E-11
+    OMEGAD_YL     0.607691E-12
+    OMEGAD_ZL    -0.217156E-05
+
+ Element: Propeller
+    Coordinate    Acceleration
+    X            -0.317170E-02
+    Y             0.142642E-13
+    Z            -0.106956E-01
+    OMEGAD_XL     0.566496E-13
+    OMEGAD_YL    -0.235532E-12
+    OMEGAD_ZL     0.458084E-13
+
+ Element: Right_Pedal
+    Coordinate    Acceleration
+    X             -175.125    
+    Y              91.0762    
+    Z            -0.560499E-11
+    OMEGAD_XL    -0.206926E-11
+    OMEGAD_YL    -0.720610E-11
+    OMEGAD_ZL    -0.258895E-04
+
+ Element: the_ground
+    Coordinate    Acceleration
+    X              0.00000    
+    Y              0.00000    
+    Z              0.00000    
+    OMEGAD_XL      0.00000    
+    OMEGAD_YL      0.00000    
+    OMEGAD_ZL      0.00000    
+
+Total Number of Bodies             =    6
+
+Total Number of Degrees of Freedom =   38
+Number of Kinematic Constraints    =   36
+Number of Drivers                  =    1
+Number of Initial Conditions       =    0
+Number of Degrees of Freedom       =    2
+
+[100]
+Warning from AX/AY/AZ angle measured by KINSENSOR KINE_SENSOR1        BODY4               HIEROBJECT27
+"KinematicSensor001"
+at time t=0.2365866740942.  The rotation sequence has become nearly singular.
+As a result, the measured angle may jump discontinuously.  The simulation will
+continue. This message will only be issued only once.  Additional instances will
+be reported if the environment variable LMSMOTRPTALLSINGANG is set.  If this
+variable is set, additional instances will reported as:
+AX/AY/AZ angle nearly singular (ID=3260) at t=0.2365866740942
+See documentation for description of singular condition of AX, AY, and AZ.
+
+[100]
+Warning from AX/AY/AZ angle measured by KINSENSOR KINE_SENSOR1        BODY4               HIEROBJECT27
+"KinematicSensor001"
+at time t=0.2381433496506.  The rotation sequence has become nearly singular.
+As a result, the measured angle may jump discontinuously.  The simulation will
+continue. This message will only be issued only once.  Additional instances will
+be reported if the environment variable LMSMOTRPTALLSINGANG is set.  If this
+variable is set, additional instances will reported as:
+AX/AY/AZ angle nearly singular (ID=3260) at t=0.2381433496506
+See documentation for description of singular condition of AX, AY, and AZ.
+
+[100]
+Warning from AX/AY/AZ angle measured by KINSENSOR KINE_SENSOR1        BODY4               HIEROBJECT27
+"KinematicSensor001"
+at time t=0.2365977878684.  The rotation sequence has become nearly singular.
+As a result, the measured angle may jump discontinuously.  The simulation will
+continue. This message will only be issued only once.  Additional instances will
+be reported if the environment variable LMSMOTRPTALLSINGANG is set.  If this
+variable is set, additional instances will reported as:
+AX/AY/AZ angle nearly singular (ID=3260) at t=0.2365977878684
+See documentation for description of singular condition of AX, AY, and AZ.
+
+The number of symbolic factorizations of the Acceleration matrix =                    1
+
+The number of symbolic factorizations of BDF Jacobian matrix =                    1
+
+[1441]
+Final integrator statistics:
+  Number of steps                 =                 2261
+  Number of f-s                   =                17013
+  Number of j-s                   =                   85
+  Ratio of f-s/steps              =  7.5245466607696
+  Ratio of j-s/steps              = 0.37593984962406E-01
+  Current time                    =  4.9999999999999
+  Total velocity computations     =                    0
+  Total position computations     =                    0
+Average Integration Order =   1.000442282176    
+Average Step Size         =  0.2211748077049E-02
+
+Userdef was internal
+
+    Total elapsed CPU time:   4.354000    
+    Total clock time:          4
